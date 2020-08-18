@@ -1,0 +1,3 @@
+Simply launch the .bat file that you need (mp3 or normal)
+Paste the link to the playlist's page or the single video's page. (Right click and then paste on the terminal)
+And Press enter, it will create a folder on your desktop.

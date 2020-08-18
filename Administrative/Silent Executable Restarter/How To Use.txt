@@ -1,0 +1,9 @@
+Just don't use it.
+This script is from Windows XP era, there are better ways to do this.
+But if for some reason you absolutely want or have to use it, well, do it.
+
+Put the 2 files at the source of your exectuable.
+Edit the Batch file and replace all the "EXECUTABLE_NAME" fields with the name of your exectuable.
+Run the VBScript to silently start the Executable and the batch file which will restart your server after 3 seconds of it crashing.
+
+To Shut down the restarter, open the Task Manager and stop cmd.exe, and hope to hit the right one! (Uses about 4000K RAM)

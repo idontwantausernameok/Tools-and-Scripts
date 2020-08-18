@@ -1,0 +1,1 @@
+for %%A IN (*.flac) DO start ffmpeg -i "%%A" -ab 320k -map_metadata 0 -id3v2_version 3 "%%A.mp3"

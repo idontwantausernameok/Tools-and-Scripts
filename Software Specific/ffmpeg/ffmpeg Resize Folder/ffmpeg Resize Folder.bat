@@ -1,0 +1,1 @@
+for %%A IN (*.mp4) DO ffmpeg -i "%%A" -vf scale=2560:1440 "%%A (2560x1440).mp4"

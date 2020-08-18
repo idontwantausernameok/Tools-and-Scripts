@@ -1,0 +1,7 @@
+These scripts toggle two firewall rules on or off.
+
+The Rules have specific names, you can change them to suit your needs.
+
+The names are:
+"PS2CI" for incoming data 
+"PS2CO" for outgoing data
