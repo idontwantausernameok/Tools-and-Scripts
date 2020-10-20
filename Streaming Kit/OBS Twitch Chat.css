@@ -1,0 +1,45 @@
+:root
+{
+	--main-bg-color: rgba(0, 0, 0, 0.8);
+	--main-text-color: rgba(255, 255, 255, 1);
+	--font-size: 1.20em;
+}
+
+html, body,
+.room-selector, .room-selector__header,
+.twilight-minimal-root,
+.tw-root--theme-light,
+.tw-root--theme-dark,
+.chat-room__overlay,
+.tw-root--theme-light.chat-room__overlay,
+.tw-root--theme-dark.chat-room__overlay,
+.popout-chat-page, .chat-room, .tw-c-background-alt,
+.chat-container, .ember-chat-container
+{
+	background: rgb(0,0,0,0) !important;
+	font-size: var(--font-size) !important;
+}
+
+body
+{
+	background: var(--main-bg-color) !important;
+	color: var(--main-text-color) !important;
+	margin: 0 auto!important;
+	overflow: hidden!important;
+}
+
+.text-fragment
+{
+	color: var(--main-text-color) !important;
+}
+
+.chat-input.tw-block.tw-pd-b-1.tw-pd-x-1,
+.stream-chat-header.tw-align-items-center.tw-border-b.tw-c-background-base.tw-flex.tw-flex-shrink-0.tw-full-width.tw-justify-content-center.tw-pd-l-1.tw-pd-r-1
+{
+	display: none !important;
+	width: 0px !important;
+	height: 0px !important;
+	position: absolute !important;
+	height: 1000px !important;
+	left: 1000px !important;
+}
