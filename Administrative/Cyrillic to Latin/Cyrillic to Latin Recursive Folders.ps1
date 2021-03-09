@@ -1,0 +1,73 @@
+﻿$logname = "./CyrillicToLatinRecursiveFolders.log"
+Get-Date | Out-File $logname
+foreach ($folder in Get-ChildItem -Directory -Recurse)
+{
+    $newFolderName=$folder.Name.Replace("А","A")
+    $newFolderName=$newFolderName.Replace("а","a")
+    $newFolderName=$newFolderName.Replace("Б","B")
+    $newFolderName=$newFolderName.Replace("б","b")
+    $newFolderName=$newFolderName.Replace("В","V")
+    $newFolderName=$newFolderName.Replace("в","v")
+    $newFolderName=$newFolderName.Replace("Г","G")
+    $newFolderName=$newFolderName.Replace("г","g")
+    $newFolderName=$newFolderName.Replace("Д","D")
+    $newFolderName=$newFolderName.Replace("д","d")
+    $newFolderName=$newFolderName.Replace("Е","E")
+    $newFolderName=$newFolderName.Replace("е","e")
+    $newFolderName=$newFolderName.Replace("Ж","J")
+    $newFolderName=$newFolderName.Replace("ж","j")
+    $newFolderName=$newFolderName.Replace("З","Z")
+    $newFolderName=$newFolderName.Replace("з","z")
+    $newFolderName=$newFolderName.Replace("И","I")
+    $newFolderName=$newFolderName.Replace("и","i")
+    $newFolderName=$newFolderName.Replace("Й","Y")
+    $newFolderName=$newFolderName.Replace("й","y")
+    $newFolderName=$newFolderName.Replace("К","K")
+    $newFolderName=$newFolderName.Replace("к","k")
+    $newFolderName=$newFolderName.Replace("Л","L")
+    $newFolderName=$newFolderName.Replace("л","l")
+    $newFolderName=$newFolderName.Replace("М","M")
+    $newFolderName=$newFolderName.Replace("м","m")
+    $newFolderName=$newFolderName.Replace("Н","N")
+    $newFolderName=$newFolderName.Replace("н","n")
+    $newFolderName=$newFolderName.Replace("О","O")
+    $newFolderName=$newFolderName.Replace("о","o")
+    $newFolderName=$newFolderName.Replace("П","P")
+    $newFolderName=$newFolderName.Replace("п","p")
+    $newFolderName=$newFolderName.Replace("Р","R")
+    $newFolderName=$newFolderName.Replace("р","r")
+    $newFolderName=$newFolderName.Replace("С","S")
+    $newFolderName=$newFolderName.Replace("с","s")
+    $newFolderName=$newFolderName.Replace("Т","T")
+    $newFolderName=$newFolderName.Replace("т","t")
+    $newFolderName=$newFolderName.Replace("У","U")
+    $newFolderName=$newFolderName.Replace("у","u")
+    $newFolderName=$newFolderName.Replace("Ф","F")
+    $newFolderName=$newFolderName.Replace("ф","f")
+    $newFolderName=$newFolderName.Replace("Х","H")
+    $newFolderName=$newFolderName.Replace("х","h")
+    $newFolderName=$newFolderName.Replace("Ц","Ts")
+    $newFolderName=$newFolderName.Replace("ц","ts")
+    $newFolderName=$newFolderName.Replace("Ч","Ch")
+    $newFolderName=$newFolderName.Replace("ч","ch")
+    $newFolderName=$newFolderName.Replace("Ш","Sh")
+    $newFolderName=$newFolderName.Replace("ш","sh")
+    $newFolderName=$newFolderName.Replace("Щ","Sht")
+    $newFolderName=$newFolderName.Replace("щ","sht")
+    $newFolderName=$newFolderName.Replace("Ъ","A")
+    $newFolderName=$newFolderName.Replace("ъ","a")
+    $newFolderName=$newFolderName.Replace("Ю","Yu")
+    $newFolderName=$newFolderName.Replace("ю","yu")
+    $newFolderName=$newFolderName.Replace("Я","Ya")
+    $newFolderName=$newFolderName.Replace("я","ya")
+        
+    $fname = $folder.FullName
+
+    if($folder.Name -ne $newFolderName)
+    {
+        $logLine = "$fname ==> $newFolderName"
+        echo $logLine
+        Add-Content $logname $logLine
+        Rename-Item -LiteralPath $folder.FullName -NewName $newFolderName
+    }
+}
