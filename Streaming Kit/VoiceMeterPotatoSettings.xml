@@ -5,23 +5,25 @@
 	<ExternalFXsend send1ch1='0' send1ch2='0' send2ch1='0' send2ch2='0' />
 	<ExternalFXreturn ret1ch1='0' ret1ch2='0' ret2ch1='0' ret2ch2='0' />
 	<InputDev index='1' type='4' name="Microphone (NVIDIA Broadcast)" />
-	<InputDev index='2' type='1' name="VoiceMeeter Output (VB-Audio Vo" />
-	<InputDev index='3' type='1' name="VoiceMeeter Aux Output (VB-Audi" />
+	<InputDev index='2' name="-" />
+	<InputDev index='3' name="-" />
 	<InputDev index='4' name="-" />
 	<InputDev index='5' name="-" />
 	<OutputDev index='1' type='4' name="Speakers (Realtek(R) Audio)" />
-	<OutputDev index='2' type='1' name="VoiceMeeter Input (VB-Audio Voi" />
-	<OutputDev index='3' type='1' name="VoiceMeeter Aux Input (VB-Audio" />
-	<OutputDev index='4' type='1' name="VoiceMeeter VAIO3 Input (VB-Aud" />
+	<OutputDev index='2' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
+	<OutputDev index='3' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
+	<OutputDev index='4' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='5' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<MIDIDevIn index='1' name="-" />
+	<MIDIDevIn index='2' name="-" />
+	<MIDIDevOut index='1' name="-" />
 </VoiceMeeterDeviceConfiguration>
 <VoiceMeeterParameters>
 	<LabelStrip1>Mic</LabelStrip1>
-	<LabelStrip2>V.Mic</LabelStrip2>
-	<LabelStrip3>V.Mic+Comms</LabelStrip3>
-	<LabelStrip4>Unused Slot 4</LabelStrip4>
-	<LabelStrip5>Unused Slot 5</LabelStrip5>
+	<LabelStrip2></LabelStrip2>
+	<LabelStrip3></LabelStrip3>
+	<LabelStrip4></LabelStrip4>
+	<LabelStrip5></LabelStrip5>
 	<LabelVirtualStrip1>V.Desktop</LabelVirtualStrip1>
 	<LabelVirtualStrip2>Comms</LabelVirtualStrip2>
 	<LabelVirtualStrip3>V.Mic In</LabelVirtualStrip3>
@@ -472,118 +474,153 @@
 <VoiceMeeterRecorder>
 	<RecordMode RecBus='0' DontPlay='0' Loop='0' MultiTrack='0' TimerStop='0' />
 	<RecordArm ArmIn1='1' ArmIn2='1' ArmIn3='1' ArmIn4='1' ArmIn5='1' ArmIn6='1' ArmIn7='1' ArmIn8='1' ArmBus1='1' ArmBus2='0' ArmBus3='0' ArmBus4='0' ArmBus5='0' ArmBus6='0' ArmBus7='0' ArmBus8='0' />
+	<RecordLastFileName></RecordLastFileName>
 	<RecordDirectory>C:\Users\SAS41\Documents\Voicemeeter</RecordDirectory>
 	<RecordPrefix></RecordPrefix>
 	<RecordParam FileType='3' BitRes='16' TargetSR='0' nbChannel='2' kbps='192' />
 </VoiceMeeterRecorder>
 <VoiceMeeterMidiMap>
 	<MidiMapName>-noname-</MidiMapName>
-	<MidiMapItem id='InGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InSolo1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InComp1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGate1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='RevSend1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='DelaySend1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx1Send1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx2Send1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InSolo2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InComp2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGate2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='RevSend2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='DelaySend2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx1Send2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx2Send2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InSolo3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InComp3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGate3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='RevSend3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='DelaySend3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx1Send3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx2Send3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGainFader4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InMute4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InSolo4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InComp4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGate4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='RevSend4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='DelaySend4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx1Send4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx2Send4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGainFader5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InMute5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InSolo5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InComp5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='InGate5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='RevSend5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='DelaySend5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx1Send5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='Fx2Send5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInSolo1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInMuteC1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn1EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn1EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn1EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInSolo2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInMuteC2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn2EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn2EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn2EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInSolo3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VInMuteC3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn3EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn3EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VIn3EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutSEL1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutEqOn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutSEL2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutEqOn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutSEL3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutEqOn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutSEL4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutGainFader4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutMute4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutEqOn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutSEL5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutGainFader5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutMute5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='OutEqOn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutSEL1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutEqOn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutSEL2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutEqOn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutSEL3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='VOutEqOn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='TapePlay' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='TapeRec' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='TapeStop' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='TapeREW' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='TapeFF' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='TapeRePlay' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='TapeGain' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
-	<MidiMapItem id='ToggleB1B2s1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' />
+	<MidiMapItem id='InGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGainFader4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGainFader5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanVIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanVIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='LRPanVIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InMute4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InMute5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InSolo1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InSolo2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InSolo3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InSolo4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InSolo5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInSolo1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInSolo2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInSolo3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInMuteC1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInMuteC2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VInMuteC3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InComp1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InComp2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InComp3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InComp4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InComp5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGate1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGate2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGate3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGate4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='InGate5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn1EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn1EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn1EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn2EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn2EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn2EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn3EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn3EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VIn3EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='RevSend1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='RevSend2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='RevSend3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='RevSend4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='RevSend5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='DelaySend1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='DelaySend2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='DelaySend3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='DelaySend4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='DelaySend5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx1Send1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx1Send2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx1Send3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx1Send4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx1Send5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx2Send1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx2Send2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx2Send3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx2Send4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Fx2Send5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutSEL1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutSEL2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutSEL3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutSEL4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutSEL5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutSEL1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutSEL2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutSEL3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutGainFader4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutGainFader5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutGainFader1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutGainFader2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutGainFader3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutMute4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutMute5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutMute1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutMute2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutMute3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='ToggleB1B2s1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutEqOn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutEqOn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutEqOn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutEqOn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='OutEqOn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutEqOn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutEqOn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VOutEqOn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='TapePlay' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='TapeRec' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='TapeStop' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='TapeREW' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='TapeFF' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='TapeRePlay' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='TapeGain' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin1App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin1App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin1App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin1App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin1App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin1App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin1App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin1App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin2App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin2App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin2App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin2App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin2App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin2App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin2App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin2App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin3App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin3App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin3App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='VolCtlVin3App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin3App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin3App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin3App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='MuteCtlVin3App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Refresh1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
+	<MidiMapItem id='Refresh2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' />
 </VoiceMeeterMidiMap>
 <VBANConfiguration>
 	<VBAN status="0" username="" color="00AA9678" />
@@ -605,5 +642,6 @@
 	<VBANStreamOut index='6' bus='0' status='0' name='Stream6' ip='' port='6980' SR='48000' ch='2' NQ='0' format='1' />
 	<VBANStreamOut index='7' bus='0' status='0' name='Stream7' ip='' port='6980' SR='48000' ch='2' NQ='0' format='1' />
 	<VBANStreamOut index='8' bus='0' status='0' name='Stream8' ip='' port='6980' SR='48000' ch='2' NQ='0' format='1' />
+	<VBANDataOut index='1' source='0' status='0' name='MIDI1' ip='' port='6980' />
 </VBANConfiguration>
 </VBAudioVoicemeeterSettings>
