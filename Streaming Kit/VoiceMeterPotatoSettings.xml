@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VBAudioVoicemeeterSettings>
 <VoiceMeeterDeviceConfiguration>
-	<OptionDev mme='1024' wdm='512' ks='512' asio='0' srasio='0' msA1='0' msA2='0' msA3='0' msA4='0' msA5='0' />
+	<OptionDev mme='2048' wdm='2048' ks='2048' asio='0' srasio='0' msA1='0' msA2='0' msA3='0' msA4='0' msA5='0' />
 	<ExternalFXsend send1ch1='0' send1ch2='0' send2ch1='0' send2ch2='0' />
 	<ExternalFXreturn ret1ch1='0' ret1ch2='0' ret2ch1='0' ret2ch2='0' />
 	<InputDev index='1' type='4' name="Microphone (NVIDIA Broadcast)" />
@@ -9,7 +9,7 @@
 	<InputDev index='3' name="-" />
 	<InputDev index='4' name="-" />
 	<InputDev index='5' name="-" />
-	<OutputDev index='1' type='4' name="Speakers (Realtek(R) Audio)" />
+	<OutputDev index='1' type='1' name="Speakers (Realtek(R) Audio)" />
 	<OutputDev index='2' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='3' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='4' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
