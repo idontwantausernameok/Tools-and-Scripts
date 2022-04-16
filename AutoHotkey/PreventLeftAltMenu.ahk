@@ -5,6 +5,7 @@
 ;The script prevents the file menu from showing up when you press Left Alt.
 ;It does so by simply pressing the Escape key when you release Left Alt.
 
+#KeyHistory 0
 #NoEnv
 #Warn
 #SingleInstance

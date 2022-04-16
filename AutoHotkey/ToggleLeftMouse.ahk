@@ -4,6 +4,7 @@
 
 ;
 
+#KeyHistory 0
 #NoEnv
 ;#Warn
 #SingleInstance

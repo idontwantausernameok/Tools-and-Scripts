@@ -6,6 +6,7 @@
 ;To properly set these as hotkeys inside other programs, modify every instance of ~LAlt and ~RAlt with LAlt and RAlt respectively and reload the script.
 ;This will disable the alt keys and make them in to only F13 and F14. Set your hotkeys now and change them back to ~LAlt and ~RAlt.
 
+#KeyHistory 0
 #NoEnv
 #Warn
 #SingleInstance

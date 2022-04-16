@@ -2,8 +2,7 @@
 ;It requires you to install AHK to use it.
 ;I will not distribute compiled versions.
 
-;
-
+#KeyHistory 0
 #NoEnv
 ;#Warn
 #SingleInstance

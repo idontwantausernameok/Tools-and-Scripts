@@ -7,25 +7,25 @@
 ;This script will kill all processes inside the ToKillArray.
 ;Put the executable name in double quotes and seperate them with commas.
 
+#KeyHistory 0
 #NoEnv
 #Warn
 #SingleInstance
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
-ToKillArray := ["ModernWarfare.exe","barony.exe"]
+global ignored := { "explorer.exe":0, "firefox.exe":0, "discord.exe":0 }
 
-ProcKill(procname)
+ProcKill()
 {
-	Runwait, taskkill /im %procname% /f,, Hide
-}
-
-KillAllProcs(arr)
-{
-	for index, element in arr
+	procname := "-"
+	WinGet, procname, ProcessName, A
+	msgbox %procname%
+	StringLower, procname, procname
+	if(ignored.HasKey(procname) = false)
 	{
-		ProcKill(element)
+		Runwait, taskkill /im %procname% /f,, Hide
 	}
 }
 
-#End::KillAllProcs(ToKillArray)
+#End::ProcKill()

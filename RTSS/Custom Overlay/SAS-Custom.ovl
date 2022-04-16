@@ -217,10 +217,10 @@ Name=CPU1
 Text=<G=CPU1 usage,-2,-2,0,0,100,28>
 PositionX=-2
 PositionY=-4
-ExtentX=-1
+ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU1 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU1 usage,1)
 [Layer7]
 Name=CPU2
 Text=<G=CPU2 usage,-2,-2,0,0,100,28>
@@ -229,7 +229,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU2 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU2 usage,1)
 [Layer8]
 Name=CPU3
 Text=<G=CPU3 usage,-2,-2,0,0,100,28>
@@ -238,7 +238,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU3 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU3 usage,1)
 [Layer9]
 Name=CPU4
 Text=<G=CPU4 usage,-2,-2,0,0,100,28>
@@ -247,7 +247,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU4 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU4 usage,1)
 [Layer10]
 Name=CPU5
 Text=<G=CPU5 usage,-2,-2,0,0,100,28>
@@ -256,7 +256,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU5 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU5 usage,1)
 [Layer11]
 Name=CPU6
 Text=<G=CPU6 usage,-2,-2,0,0,100,28>
@@ -265,7 +265,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU6 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU6 usage,1)
 [Layer12]
 Name=CPU7
 Text=<G=CPU7 usage,-2,-2,0,0,100,28>
@@ -274,7 +274,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU7 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU7 usage,1)
 [Layer13]
 Name=CPU8
 Text=<G=CPU8 usage,-2,-2,0,0,100,28>
@@ -283,7 +283,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU8 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU8 usage,1)
 [Layer14]
 Name=CPU9
 Text=<G=CPU9 usage,-2,-2,0,0,100,28>
@@ -292,7 +292,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU9 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU9 usage,1)
 [Layer15]
 Name=CPU10
 Text=<G=CPU10 usage,-2,-2,0,0,100,28>
@@ -301,7 +301,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU10 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU10 usage,1)
 [Layer16]
 Name=CPU11
 Text=<G=CPU11 usage,-2,-2,0,0,100,28>
@@ -310,7 +310,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU11 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU11 usage,1)
 [Layer17]
 Name=CPU12
 Text=<G=CPU12 usage,-2,-2,0,0,100,28>
@@ -319,7 +319,7 @@ PositionY=-4
 ExtentX=-2
 ExtentY=-2
 ExtentOrigin=0
-TextColor=C800,0,99,FF9600,99,99,C80000,99,(CPU12 usage,1)
+TextColor=C800,0,90,FF9600,90,99,C80000,99,(CPU12 usage,1)
 [Layer18]
 Name=GPU Core Label
 Text=GPU Core:

@@ -9,6 +9,7 @@
 ;You have been warned.
 ;Put the game's window title in double quotes and seperate them with commas.
 
+#KeyHistory 0
 #NoEnv
 #Warn
 #SingleInstance

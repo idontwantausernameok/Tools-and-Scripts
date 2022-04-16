@@ -8,6 +8,7 @@
 ;This might not work at all or instead, break mouse functionality.
 ;You have been warned.
 
+#KeyHistory 0
 #NoEnv
 #Warn
 #SingleInstance

@@ -6,6 +6,7 @@
 
 ;This script will click every 50ms if CapsLock is on and Mouse 1 is pressed.
 
+#KeyHistory 0
 #NoEnv
 #Warn
 #SingleInstance
