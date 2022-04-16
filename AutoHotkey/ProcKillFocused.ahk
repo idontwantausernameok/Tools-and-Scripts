@@ -20,7 +20,6 @@ ProcKill()
 {
 	procname := "-"
 	WinGet, procname, ProcessName, A
-	msgbox %procname%
 	StringLower, procname, procname
 	if(ignored.HasKey(procname) = false)
 	{
