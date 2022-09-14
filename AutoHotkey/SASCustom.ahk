@@ -13,7 +13,7 @@ LeftAlt()
 		KeyWait, LAlt
 		return
 	}
-	Send {F13}
+	Send {F23}
 	return
 }
 
@@ -22,10 +22,10 @@ RightAlt()
 {
 	if (A_PriorHotkey != "~RAlt" or A_TimeSincePriorHotkey > 500)
 	{
-		KeyWait, RAlt
+		KeyWait, RAlt 
 		return
 	}
-	Send {F14}
+	Send {F24}
 	return
 }
 
