@@ -1,0 +1,1 @@
+rmdir /s /q "C:\NastyFolder\NastyStuff\"

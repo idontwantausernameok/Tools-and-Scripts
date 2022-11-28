@@ -30,3 +30,24 @@ RightAlt()
 }
 
 ^!Space::Send {Media_Play_Pause}
+
+
+F13::LMBSpam()
+LMBSpam()
+{
+	while (GetKeyState("F13","P"))
+	{
+		Click
+		Sleep, 20
+	}
+}
+
+F14::RMBSpam()
+RMBSpam()
+{
+	while (GetKeyState("F14","P"))
+	{
+		Click, Right
+		Sleep, 20
+	}
+}

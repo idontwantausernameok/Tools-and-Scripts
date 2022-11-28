@@ -1,0 +1,5 @@
+Run script by pasting this in a terminal that has this folder as it's current directory:
+
+PowerShell.exe -ExecutionPolicy Bypass -File .\_DOWNLOAD_MODS.ps1
+
+Currently, it's set up for downloading some RimWorld mods.
