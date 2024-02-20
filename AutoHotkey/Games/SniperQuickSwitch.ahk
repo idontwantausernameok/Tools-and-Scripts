@@ -4,8 +4,6 @@
 
 ;The toggle is set to CapsLock, see the AHK docs on how to change it.
 
-;This script will click every 50ms if CapsLock is on and Mouse 1 is pressed.
-
 #KeyHistory 0
 #NoEnv
 #Warn

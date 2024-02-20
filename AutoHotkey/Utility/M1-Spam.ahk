@@ -4,7 +4,8 @@
 
 ;The toggle is set to CapsLock, see the AHK docs on how to change it.
 
-;This script will click every 50ms if CapsLock is on and Mouse 1 is pressed.
+;This script only works when Capslock is on!
+;It will click every 20ms while Mouse 1 is pressed.
 
 #KeyHistory 0
 #NoEnv
@@ -13,16 +14,14 @@
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
+#if GetKeyState("CapsLock", "T")
 ~*LButton::CustomClick()
 CustomClick()
 {
-	if (GetKeyState("CapsLock", "T"))
+	while (GetKeyState("LButton","P"))
 	{
-		while (GetKeyState("LButton","P"))
-		{
-			Click
-			Sleep, 50
-		}
+		Click
+		Sleep, 20
 	}
 }
 

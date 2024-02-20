@@ -2,30 +2,30 @@
 ;It requires you to install AHK to use it.
 ;I will not distribute compiled versions.
 
-;
+;This script only works when Capslock is on!
+;It toggle the Left Mouse button on and off.
 
 #KeyHistory 0
 #NoEnv
-;#Warn
 #SingleInstance
+#UseHook
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
-LMBIsToggled = false
+global LMBIsToggled := false
 
-^+LButton::ToggleLMB()
+#if GetKeyState("CapsLock", "T")
+*$LButton up::ToggleLMB()
 
 ToggleLMB()
 {
-	LMBIsToggled := !LMBIsToggled
-	Send {LButton up}
-
 	if(LMBIsToggled)
-	{
-		Send {LButton down}
-	}
-	else
 	{
 		Send {LButton up}
 	}
+	else
+	{
+		Send {LButton down}
+	}
+	LMBIsToggled := !LMBIsToggled
 }

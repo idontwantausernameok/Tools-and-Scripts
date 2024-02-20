@@ -1,4 +1,4 @@
-﻿#KeyHistory 0
+#KeyHistory 0
 #NoEnv
 #Warn
 #SingleInstance
@@ -41,25 +41,34 @@ LMBSpam()
 	}
 }
 
-*F14::RMBSpam()
-RMBSpam()
+*F14::SortAndEmpty()
+SortAndEmpty()
 {
+
 	while (GetKeyState("F14","P"))
 	{
-		Click, Right
-		Sleep, 30
+		MouseMove, 930, 425
+		Sleep, 1
+
+		Send, {LCtrl down}
+		Sleep, 1
+
+		Send, {MButton}
+		Sleep, 1
+
+		Loop, 8
+		{
+			if(GetKeyState("F14","P"))
+			{
+				Send, {q}
+				Sleep, 1
+				MouseMove, 90, 0, 0, R
+			}
+			else {
+				break
+			}
+		}
+
+		Send, {LCtrl up}
 	}
 }
-
-; F1::F13
-; F2::F14
-; F3::F15
-; F4::F16
-; F5::F17
-; F6::F18
-; F7::F19
-; F8::F20
-; F9::F21
-; F10::F22
-; F11::F23
-; F12::F24
