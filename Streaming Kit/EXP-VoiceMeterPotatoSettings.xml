@@ -59,12 +59,12 @@
 	<StripGate index='6' thresin='-50.00' damping='-50.00' bpsidechain='100' attack='20.0' hold='200.0' release='1250.0' />
 	<Strip index='6' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='6' EQGain1='0.00' EQGain2='0.00' EQGain3='0.00' Panel3Dx='0.000' Panel3Dy='0.000' />
-	<Strip index='7' mute='0' solo='0' mono='0' muc='0' EQon='0' prg_c='0' prg_g='0' busa='1' busa2='1' busa3='1' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
+	<Strip index='7' mute='0' solo='0' mono='0' muc='0' EQon='0' prg_c='0' prg_g='0' busa='1' busa2='1' busa3='1' busa4='0' busa5='0' busb='0' busb2='1' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<StripComp index='7' gainin='0.00' attack='10.0' release='60.0' knee='0.50' comprate='1.000' threshold='-40.00' automakeup='1' gainout='0.00' />
 	<StripGate index='7' thresin='-50.00' damping='-50.00' bpsidechain='100' attack='20.0' hold='200.0' release='1250.0' />
 	<Strip index='7' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='7' EQGain1='0.00' EQGain2='0.00' EQGain3='0.00' Panel3Dx='0.000' Panel3Dy='0.000' />
-	<Strip index='8' mute='0' solo='0' mono='0' muc='0' EQon='0' prg_c='0' prg_g='0' busa='1' busa2='1' busa3='1' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
+	<Strip index='8' mute='0' solo='0' mono='0' muc='0' EQon='0' prg_c='0' prg_g='0' busa='1' busa2='1' busa3='1' busa4='0' busa5='0' busb='1' busb2='1' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<StripComp index='8' gainin='0.00' attack='10.0' release='60.0' knee='0.50' comprate='1.000' threshold='-40.00' automakeup='1' gainout='0.00' />
 	<StripGate index='8' thresin='-50.00' damping='-50.00' bpsidechain='100' attack='20.0' hold='200.0' release='1250.0' />
 	<Strip index='8' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
