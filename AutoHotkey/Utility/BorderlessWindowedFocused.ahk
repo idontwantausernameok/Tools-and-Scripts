@@ -8,19 +8,19 @@
 ;This might not work at all or instead, break mouse functionality.
 ;You have been warned.
 
-#KeyHistory 0
-#NoEnv
+#Requires AutoHotkey v2.0
+;#Usehook
 #Warn
+#Warn VarUnset, Off
 #SingleInstance
-SendMode Input
-SetWorkingDir %A_ScriptDir%
-
-ResizeWindow()
-{
-	WinGet, WindowID, ID, A
-	WinSet, Style, -0xC00000, ahk_id %WindowID%
-	WinMove, ahk_id %WindowID%, , -2, -2, A_ScreenWidth+4, A_ScreenHeight+4
-}
-
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
 #Home::ResizeWindow()
+ResizeWindow()
+{
+	WindowID := WinGetID("A")
+	WinSetStyle("-0xC00000", "ahk_id " WindowID)
+	WinMove(-2, -2, A_ScreenWidth+4, A_ScreenHeight+4, "ahk_id " WindowID)
+}

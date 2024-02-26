@@ -7,21 +7,23 @@
 ;This script only works when Capslock is on!
 ;It will click every 20ms while Mouse 1 is pressed.
 
-#KeyHistory 0
-#NoEnv
+#Requires AutoHotkey v2.0
+;#Usehook
 #Warn
+#Warn VarUnset, Off
 #SingleInstance
-SendMode Input
-SetWorkingDir %A_ScriptDir%
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
-#if GetKeyState("CapsLock", "T")
+#HotIf GetKeyState("CapsLock", "T")
 ~*Space::CustomSpace()
 CustomSpace()
 {
 	while (GetKeyState("Space","P"))
 	{
-		SendEvent, {Space}
-		Sleep, 20
+		SendEvent("{Space}")
+		Sleep(20)
 	}
 }
 

@@ -8,19 +8,16 @@
 ;"clumsy 0.2"
 
 ;This can be adapted for other programs, fairly easily.
+;#Usehook
+#Warn All, Off
+#SingleInstance
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
-checked := 0
-
-ControlGet, checked, Checked, , Lag, clumsy 0.2
-
-XButton2::
-    if (checked == 1) {
-        Control, Uncheck, , Lag, clumsy 0.2
-        checked = 0
-    }
-    else
-    {
-        Control, Check, , Lag, clumsy 0.2
-        checked = 1
-    }
+XButton2::Toggle()
+Toggle()
+{
+    ControlSetChecked(-1, "Lag", "clumsy 0.2")
+}
 Return

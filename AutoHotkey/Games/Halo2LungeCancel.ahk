@@ -5,31 +5,33 @@
 ;The toggle is set to CapsLock, see the AHK docs on how to change it.
 
 
-#KeyHistory 0
-#NoEnv
+#Requires AutoHotkey v2.0
+;#Usehook
 #Warn
+#Warn VarUnset, Off
 #SingleInstance
-SendMode Input
-SetWorkingDir %A_ScriptDir%
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
 *XButton2::Lunge()
 Lunge()
 {
-    Send, {1 down}
-    Sleep, 30
-    Send, {1 up}
+    Send("{1 down}")
+    Sleep(30)
+    Send("{1 up}")
 
-    Sleep, 3
+    Sleep(3)
 
-    Send, {r down}
-    Sleep, 5
-    Send, {r up}
+    Send("{r down}")
+    Sleep(5)
+    Send("{r up}")
 
-    Sleep, 3
+    Sleep(3)
     
-    Send {LButton down}
-    Sleep, 5
-    Send {LButton up}
+    Send("{LButton down}")
+    Sleep(5)
+    Send("{LButton up}")
     return
 }
 
@@ -38,8 +40,8 @@ LungeJump()
 {
     Lunge()
     
-    Send {Space down}
-    Sleep, 1
-    Send {Space up}
+    Send("{Space down}")
+    Sleep(1)
+    Send("{Space up}")
     return
 }

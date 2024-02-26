@@ -7,20 +7,18 @@
 ;This script will kill all processes inside the ToKillArray.
 ;Put the executable name in double quotes and seperate them with commas.
 
-#KeyHistory 0
-#NoEnv
+#Requires AutoHotkey v2.0
+;#Usehook
 #Warn
+#Warn VarUnset, Off
 #SingleInstance
-SendMode Input
-SetWorkingDir %A_ScriptDir%
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
 global ToKillArray := ["ModernWarfare.exe","barony.exe"]
 
-ProcKill(procname)
-{
-	Runwait, taskkill /im %procname% /f,, Hide
-}
-
+#End::KillAllProcs(ToKillArray)
 KillAllProcs(arr)
 {
 	for index, element in arr
@@ -29,4 +27,12 @@ KillAllProcs(arr)
 	}
 }
 
-#End::KillAllProcs(ToKillArray)
+ProcessCloseAll(PIDOrName)
+{
+    While ProcessExist(PIDOrName)
+	{
+        ProcessClose(PIDOrName)
+	}
+}
+
+

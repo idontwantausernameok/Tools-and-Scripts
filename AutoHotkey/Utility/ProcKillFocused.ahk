@@ -7,24 +7,31 @@
 ;This script will kill all processes inside the ToKillArray.
 ;Put the executable name in double quotes and seperate them with commas.
 
-#KeyHistory 0
-#NoEnv
+#Requires AutoHotkey v2.0
+;#Usehook
 #Warn
+#Warn VarUnset, Off
 #SingleInstance
-SendMode Input
-SetWorkingDir %A_ScriptDir%
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
-global ignored := { "explorer.exe":0, "firefox.exe":0, "discord.exe":0 }
+global ignored := ["explorer.exe", "firefox.exe", "discord.exe"]
 
+#End::ProcKill()
 ProcKill()
 {
-	procname := "-"
-	WinGet, procname, ProcessName, A
-	StringLower, procname, procname
-	if(ignored.HasKey(procname) = false)
+	procname := WinGetProcessName("A")
+	if(ignored.Has(StrLower(procname)) > 0)
 	{
-		Runwait, taskkill /im %procname% /f,, Hide
+		ProcessCloseAll(procname)
 	}
 }
 
-#End::ProcKill()
+ProcessCloseAll(PIDOrName)
+{
+    While ProcessExist(PIDOrName)
+	{
+        ProcessClose(PIDOrName)
+	}
+}

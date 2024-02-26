@@ -5,27 +5,28 @@
 ;This script only works when Capslock is on!
 ;It toggle the Left Mouse button on and off.
 
-#KeyHistory 0
-#NoEnv
+#Requires AutoHotkey v2.0
+;#Usehook
+#Warn
+#Warn VarUnset, Off
 #SingleInstance
-#UseHook
-SendMode Input
-SetWorkingDir %A_ScriptDir%
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
 global LMBIsToggled := false
 
-#if GetKeyState("CapsLock", "T")
+#HotIf GetKeyState("CapsLock", "T")
 *$LButton up::ToggleLMB()
-
 ToggleLMB()
 {
 	if(LMBIsToggled)
 	{
-		Send {LButton up}
+		Send("{LButton up}")
 	}
 	else
 	{
-		Send {LButton down}
+		Send("{LButton down}")
 	}
 	LMBIsToggled := !LMBIsToggled
 }

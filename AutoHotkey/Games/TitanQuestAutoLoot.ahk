@@ -7,21 +7,23 @@
 ;This script only works when Capslock is on!
 ;It will click every 20ms while Mouse 1 is pressed.
 
-#KeyHistory 0
-#NoEnv
+#Requires AutoHotkey v2.0
+;#Usehook
 #Warn
+#Warn VarUnset, Off
 #SingleInstance
-SendMode Input
-SetWorkingDir %A_ScriptDir%
+SendMode("Input")
+SetWorkingDir(A_ScriptDir)
+KeyHistory(0)
 
-#if GetKeyState("CapsLock", "T")
-	~*LButton::CustomClick()
-	CustomClick()
+#HotIf GetKeyState("CapsLock", "T")
+~*LButton::CustomClick()
+CustomClick()
+{
+	while (GetKeyState("LButton","P"))
 	{
-		while (GetKeyState("LButton","P"))
-		{
-			Click, X1
-			Sleep, 20
-		}
+		Click("X1")
+		Sleep(20)
 	}
+}
 
