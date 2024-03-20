@@ -1,0 +1,8 @@
+Audio Latency Testing:
+https://superpowered.com/weblatency/
+
+OBS Launch Parameters:
+obs64.exe --minimize-to-tray -scene "Screen Capture" --startreplaybuffer
+
+Save Sound:
+https://gist.github.com/snakecase/e816384a071cec31efbb4b9e429c108d

@@ -65,9 +65,10 @@ AudioRestart()
 	ProcessCloseAll("DiscordPTB.exe")
 	ProcessCloseAll("DiscordCanary.exe")
 
-	Sleep(50)
+	Sleep(500)
 	Run("C:\Program Files (x86)\VB\Voicemeeter\voicemeeter8x64.exe")
-	Sleep(2000)
+	Sleep(7000)
+	ProcessSetPriority("Realtime", "voicemeeter8x64.exe")
 
 	localApps:="C:\Users\" . A_UserName . "\AppData\Local"
 	if (Default == 1)
