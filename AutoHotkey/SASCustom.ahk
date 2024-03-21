@@ -7,6 +7,66 @@ SendMode("Input")
 SetWorkingDir(A_ScriptDir)
 KeyHistory(0)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                                     ;;
+;;           F-Key Bindings            ;;
+;;                                     ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+AppsKey & F1::F13  ; LMBSpam
+AppsKey & F2::F14  ; RMBSpam
+AppsKey & F3::F15
+AppsKey & F4::F16
+AppsKey & F5::F17
+AppsKey & F6::F18
+AppsKey & F7::F19
+AppsKey & F8::F20
+AppsKey & F9::F21  ; GPU Stats
+AppsKey & F10::F22 ; Record
+AppsKey & F11::F23 ; Mute Discord
+AppsKey & F12::F24 ; Deafen Discord
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                                     ;;
+;;          Simple Shortcuts           ;;
+;;                                     ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Ctrl + Alt + Space = Play/Pause Media
+^!Space::Send("{Media_Play_Pause}")
+
+; Alt + NumPlus = F21
+!NumpadSub::Send("{F21}")
+
+; Alt + NumPlus = F22
+!NumpadAdd::Send("{F22}")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                                     ;;
+;;          Complec Shortcuts          ;;
+;;                                     ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; F13 = LMBSpam
+*F13::LMBSpam()
+LMBSpam()
+{
+	while (GetKeyState("F13","P"))
+	{
+		Click("Left")
+		Sleep(30)
+	}
+}
+
+; F14 = RMBSpam
+*F14::RMBSpam()
+RMBSpam()
+{
+	while (GetKeyState("F14","P"))
+	{
+		Click("Right")
+		Sleep(30)
+	}
+}
+
+; Double-Tap LeftAlt to Mute Discord
 ~LAlt::LeftAlt()
 LeftAlt()
 {
@@ -19,6 +79,7 @@ LeftAlt()
 	return
 }
 
+; Double-Tap RightAlt to Deafen Discord
 ~RAlt::RightAlt()
 RightAlt()
 {
@@ -31,28 +92,12 @@ RightAlt()
 	return
 }
 
-^!Space::Send("{Media_Play_Pause}")
-
-*F13::LMBSpam()
-LMBSpam()
-{
-	while (GetKeyState("F13","P"))
-	{
-		Click("Left")
-		Sleep(30)
-	}
-}
-
-*F14::RMBSpam()
-RMBSpam()
-{
-	while (GetKeyState("F14","P"))
-	{
-		Click("Right")
-		Sleep(30)
-	}
-}
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                                     ;;
+;;        Automation Shortcuts~        ;;
+;;                                     ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Ctrl + Alt + Pause/Break = Restart Voicemeeter Potato and Discord
 ^!CtrlBreak::AudioRestart()
 AudioRestart()
 {
@@ -97,16 +142,3 @@ ProcessCloseAll(PIDOrName)
         ProcessClose(PIDOrName)
 	}
 }
-
-; F1::F13
-; F2::F14
-; F3::F15
-; F4::F16
-; F5::F17
-; F6::F18
-; F7::F19
-; F8::F20
-; F9::F21
-; F10::F22
-; F11::F23
-; F12::F24
