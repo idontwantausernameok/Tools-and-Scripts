@@ -1,6 +1,3 @@
-Audio Latency Testing:
-https://superpowered.com/weblatency/
-
 OBS Launch Parameters:
 obs64.exe --minimize-to-tray -scene "Screen Capture" --startreplaybuffer
 
