@@ -1,5 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
-;#Usehook
+#Usehook True
 #Warn
 #Warn VarUnset, Off
 #SingleInstance
@@ -25,6 +25,8 @@ AppsKey & F10::F22 ; Record
 AppsKey & F11::F23 ; Mute Discord
 AppsKey & F12::F24 ; Deafen Discord
 
+~AppsKey::return
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                                     ;;
 ;;          Simple Shortcuts           ;;
@@ -33,15 +35,18 @@ AppsKey & F12::F24 ; Deafen Discord
 ; Ctrl + Alt + Space = Play/Pause Media
 ^!Space::Send("{Media_Play_Pause}")
 
+; Xbox Share Button (controller) = Play/Pause Media
+; Joy12::Send("{Media_Play_Pause}")
+
 ; Alt + NumPlus = F21
-!NumpadSub::Send("{F21}")
+;!NumpadSub::Send("{F21}")
 
 ; Alt + NumPlus = F22
-!NumpadAdd::Send("{F22}")
+;!NumpadAdd::Send("{F22}")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                                     ;;
-;;          Complec Shortcuts          ;;
+;;          Complex Shortcuts          ;;
 ;;                                     ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; F13 = LMBSpam

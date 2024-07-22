@@ -13,8 +13,8 @@ services:
       - /mnt/nfs/media:/mnt/media
     ports:
       - 8101:8101
-      - 6881:6881
-      - 6881:6881/udp
+      - 52866-52867:52866-52867
+      - 52866-52867:52866-52867/udp
     restart: unless-stopped
   sabnzbd:
     image: lscr.io/linuxserver/sabnzbd:latest
