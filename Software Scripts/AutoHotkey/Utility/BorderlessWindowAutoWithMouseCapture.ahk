@@ -1,12 +1,6 @@
 ;This is an AutoHotkey 2 (AHK2) Script.
 ;It requires you to install AHK2 to use it.
-;I will not distribute compiled versions.
-
-;It runs automatically.
-
-;This script will try to force a pseudo borderless-fullscreen mode.
-;This might not work at all or instead, break mouse functionality.
-;You have been warned.
+;It force a pseudo borderless-fullscreen mode for an application.
 
 #Requires AutoHotkey v2.0
 ;#Usehook
