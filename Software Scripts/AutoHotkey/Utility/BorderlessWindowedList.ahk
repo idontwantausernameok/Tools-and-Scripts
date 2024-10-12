@@ -34,7 +34,7 @@ ResizeWindow(windowTitle)
 	WindowID := WinGetID(windowTitle)
 	if(WindowID)
 	{
-		WinSetStyle("-0xC00000", "ahk_id " WindowID)
-		WinMove(-2, -2, A_ScreenWidth+4, A_ScreenHeight+4, "ahk_id " WindowID)
+    	WinSetStyle("-0xC40000", WindowID)
+		WinMove(0, 0, A_ScreenWidth, A_ScreenHeight, WindowID)
 	}
 }
