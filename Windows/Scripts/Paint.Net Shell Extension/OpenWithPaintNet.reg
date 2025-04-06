@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_CLASSES_ROOT\*\shell\openPDN]
+@="Edit with Paint.NET"
+"Icon"="\"C:\\Program Files\\Paint.NET\\PaintDotNet.exe\",0"
+
+
+[HKEY_CLASSES_ROOT\*\shell\openPDN\command]
+@="\"C:\\Program Files\\Paint.NET\\PaintDotNet.exe\" \"%1\""

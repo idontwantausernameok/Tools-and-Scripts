@@ -1,0 +1,1 @@
+{"bitrate":50000,"rate_control":"VBR","keyint_sec":1,"bf":0,"preset":"balanced","ffmpeg_opts":"MaxNumRefFrames=4 HighMotionQualityBoostEnable=1 keyint=60"}

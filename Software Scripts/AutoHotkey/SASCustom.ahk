@@ -12,20 +12,20 @@ KeyHistory(0)
 ;;           F-Key Bindings            ;;
 ;;                                     ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-AppsKey & F1::F13  ; LMBSpam
-AppsKey & F2::F14  ; RMBSpam
-AppsKey & F3::F15
-AppsKey & F4::F16
-AppsKey & F5::F17
-AppsKey & F6::F18
-AppsKey & F7::F19
-AppsKey & F8::F20
-AppsKey & F9::F21  ; GPU Stats
-AppsKey & F10::F22 ; Record
-AppsKey & F11::F23 ; Mute Discord
-AppsKey & F12::F24 ; Deafen Discord
+; AppsKey & F1::F13  ; LMBSpam
+; AppsKey & F2::F14  ; RMBSpam
+; AppsKey & F3::F15
+; AppsKey & F4::F16
+; AppsKey & F5::F17
+; AppsKey & F6::F18
+; AppsKey & F7::F19
+; AppsKey & F8::F20
+; AppsKey & F9::F21  ; GPU Stats
+; AppsKey & F10::F22 ; Record
+; AppsKey & F11::F23 ; Mute Discord
+; AppsKey & F12::F24 ; Deafen Discord
 
-~AppsKey::return
+; ~AppsKey::return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                                     ;;
@@ -33,7 +33,7 @@ AppsKey & F12::F24 ; Deafen Discord
 ;;                                     ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Ctrl + Alt + Space = Play/Pause Media
-^!Space::Send("{Media_Play_Pause}")
+; ^!Space::Send("{Media_Play_Pause}")
 
 ; Xbox Share Button (controller) = Play/Pause Media
 ; Joy12::Send("{Media_Play_Pause}")
@@ -72,7 +72,7 @@ RMBSpam()
 }
 
 ; Double-Tap LeftAlt to Mute Discord
-~LAlt::LeftAlt()
+; ~LAlt::LeftAlt()
 LeftAlt()
 {
 	if (A_PriorHotkey != "~LAlt" or A_TimeSincePriorHotkey > 300)
@@ -85,7 +85,7 @@ LeftAlt()
 }
 
 ; Double-Tap RightAlt to Deafen Discord
-~RAlt::RightAlt()
+; ~RAlt::RightAlt()
 RightAlt()
 {
 	if (A_PriorHotkey != "~RAlt" or A_TimeSincePriorHotkey > 300)
@@ -103,7 +103,7 @@ RightAlt()
 ;;                                     ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Ctrl + Alt + Pause/Break = Restart Voicemeeter Potato and Discord
-^!CtrlBreak::AudioRestart()
+; ^!CtrlBreak::AudioRestart()
 AudioRestart()
 {
 	Default := ProcessExist("Discord.exe") > 0

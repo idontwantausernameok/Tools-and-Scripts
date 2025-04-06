@@ -11,7 +11,7 @@ RefreshPeriod=500
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=27
+Sources=28
 Tables=0
 Layers=38
 [Source0]
@@ -134,84 +134,91 @@ Formula=
 Provider=HAL
 ID=GPU1 usage
 [Source17]
-Name=GPU1 video engine usage
-Units=%
-Format=
-Formula=
-Provider=HAL
-ID=GPU1 video engine usage
-[Source18]
 Name=GPU1 power
 Units=W
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 power
-[Source19]
+[Source18]
 Name=GPU1 temperature
 Units=
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature
-[Source20]
+[Source19]
 Name=CPU power
 Units=W
 Format=
 Formula=
 Provider=HAL
 ID=CPU power
-[Source21]
+[Source20]
 Name=CPU clock
 Units=MHz
 Format=
 Formula=
 Provider=HAL
 ID=CPU clock
-[Source22]
+[Source21]
 Name=RAM usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent
-[Source23]
+[Source22]
 Name=GPU1 temperature
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature
-[Source24]
+[Source23]
 Name=GPU1 temperature 2
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature 2
-[Source25]
+[Source24]
 Name=GPU1 memory usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory usage percent
-[Source26]
+[Source25]
 Name=CPU temperature
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=CPU temperature
+[Source26]
+Name=GPU1 memory temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory temperature
+[Source27]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU usage
 [Layer0]
-Name=GPU Video Graph
-Text=<G=GPU1 video engine usage,0,0,1,0,100,8>
+Name=GPU Core Graph
+Text=<G=GPU1 power,0,0,1,0,400,8>
 PositionX=-4
 PositionY=-6
 ExtentX=-12
 ExtentY=-1
 ExtentOrigin=3
-TextColor=8276B900
+TextColor=82FFFFFF
 [Layer1]
 Name=GPU Core Graph
 Text=<G=GPU1 usage,0,0,1,0,100,8>
@@ -220,7 +227,7 @@ PositionY=-4
 ExtentX=-12
 ExtentY=-1
 ExtentOrigin=3
-TextColor=8276B900
+TextColor=82FFFFFF
 [Layer2]
 Name=Frame Time Graph
 Text=<G=Frametime,-24,-3,0,0,100,0>
@@ -276,40 +283,22 @@ TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
 [Layer7]
 Name=GPU Core
 Text=%GPU1 usage%%
-PositionX=-8
+PositionX=-4
 PositionY=-4
 ExtentX=-4
 ExtentY=-1
-ExtentOrigin=4
-TextColor=8276B900
+ExtentOrigin=5
+TextColor=82FFFFFF
 [Layer8]
-Name=GPU Video
-Text=%GPU1 video engine usage%%
-PositionX=-8
-PositionY=-6
-ExtentX=-4
-ExtentY=-1
-ExtentOrigin=4
-TextColor=8276B900
-[Layer9]
 Name=GPU Power
 Text=%GPU1 power%W
 PositionX=-4
-PositionY=-7
+PositionY=-6
 ExtentX=-4
 ExtentY=-1
 ExtentOrigin=5
-TextColor=8276B900
-[Layer10]
-Name=GPU Temp
-Text=%GPU1 temperature%~%GPU1 temperature 2%°C
-PositionX=-9
-PositionY=-7
-ExtentX=-4
-ExtentY=-1
-ExtentOrigin=5
-TextColor=8276B900
-[Layer11]
+TextColor=82FFFFFF
+[Layer9]
 Name=CPU1
 Text=<G=CPU2 usage,-2,-2,0,0,100,28>
 PositionX=-1
@@ -320,7 +309,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer12]
+[Layer10]
 Name=CPU1
 Text=<G=CPU3 usage,-2,-2,0,0,100,28>
 PositionX=-2
@@ -331,7 +320,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer13]
+[Layer11]
 Name=CPU1
 Text=<G=CPU4 usage,-2,-2,0,0,100,28>
 PositionX=-3
@@ -342,7 +331,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer14]
+[Layer12]
 Name=CPU1
 Text=<G=CPU5 usage,-2,-2,0,0,100,28>
 PositionX=-4
@@ -353,7 +342,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer15]
+[Layer13]
 Name=CPU1
 Text=<G=CPU6 usage,-2,-2,0,0,100,28>
 PositionX=-5
@@ -364,7 +353,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer16]
+[Layer14]
 Name=CPU1
 Text=<G=CPU7 usage,-2,-2,0,0,100,28>
 PositionX=-6
@@ -375,7 +364,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer17]
+[Layer15]
 Name=CPU1
 Text=<G=CPU8 usage,-2,-2,0,0,100,28>
 PositionX=-7
@@ -386,7 +375,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer18]
+[Layer16]
 Name=CPU1
 Text=<G=CPU9 usage,-2,-2,0,0,100,28>
 PositionX=-8
@@ -397,7 +386,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer19]
+[Layer17]
 Name=CPU1
 Text=<G=CPU10 usage,-2,-2,0,0,100,28>
 PositionX=-9
@@ -408,7 +397,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer20]
+[Layer18]
 Name=CPU1
 Text=<G=CPU11 usage,-2,-2,0,0,100,28>
 PositionX=-10
@@ -419,7 +408,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer21]
+[Layer19]
 Name=CPU1
 Text=<G=CPU12 usage,-2,-2,0,0,100,28>
 PositionX=-11
@@ -430,7 +419,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer22]
+[Layer20]
 Name=CPU1
 Text=<G=CPU13 usage,-2,-2,0,0,100,28>
 PositionX=-12
@@ -441,7 +430,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer23]
+[Layer21]
 Name=CPU1
 Text=<G=CPU14 usage,-2,-2,0,0,100,28>
 PositionX=-13
@@ -452,7 +441,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer24]
+[Layer22]
 Name=CPU1
 Text=<G=CPU15 usage,-2,-2,0,0,100,28>
 PositionX=-14
@@ -463,7 +452,7 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer25]
+[Layer23]
 Name=CPU1
 Text=<G=CPU16 usage,-2,-2,0,0,100,28>
 PositionX=-15
@@ -474,43 +463,25 @@ ExtentOrigin=7
 FixedAlignment=1
 Size=50
 TextColor=8200C800,0,90,82FF9600,90,99,82C80000,99,(CPU1 usage,1)
-[Layer26]
+[Layer24]
 Name=CPU Power
 Text=%CPU power%W
-PositionX=-4
-PositionY=-8
+PositionX=-11
+PositionY=-2
 ExtentX=-4
 ExtentY=-1
 ExtentOrigin=5
-TextColor=82DD0031
-[Layer27]
+TextColor=82FFFFFF
+[Layer25]
 Name=CPU Temp
 Text=%CPU temperature%°C
-PositionX=-12
-PositionY=-8
+PositionX=-1
+PositionY=-2
 ExtentX=-3
 ExtentY=-1
 ExtentOrigin=5
-TextColor=82DD0031
-[Layer28]
-Name=CPU Label
-Text=CPU
-PositionX=0
-PositionY=-8
-ExtentX=-3
-ExtentY=-1
-ExtentOrigin=3
-TextColor=82DD0031
-[Layer29]
-Name=GPU Label
-Text=GPU
-PositionX=0
-PositionY=-7
-ExtentX=-3
-ExtentY=-1
-ExtentOrigin=3
-TextColor=8276B900
-[Layer30]
+TextColor=82FFFFFF
+[Layer26]
 Name=GPU Core Label
 Text=GPU
 PositionX=0
@@ -518,8 +489,8 @@ PositionY=-4
 ExtentX=-3
 ExtentY=-1
 ExtentOrigin=3
-TextColor=8276B900
-[Layer31]
+TextColor=82FFFFFF
+[Layer27]
 Name=RAM Label
 Text=RAM
 PositionX=0
@@ -528,7 +499,7 @@ ExtentX=-3
 ExtentY=-1
 ExtentOrigin=3
 TextColor=82FFFFFF
-[Layer32]
+[Layer28]
 Name=RAM Graph
 Text=<G=RAM usage percent,0,0,1,0,100,8>
 PositionX=-4
@@ -537,7 +508,7 @@ ExtentX=-12
 ExtentY=-1
 ExtentOrigin=3
 TextColor=82FFFFFF
-[Layer33]
+[Layer29]
 Name=RAM
 Text=%RAM usage percent%%
 PositionX=-8
@@ -547,7 +518,7 @@ ExtentY=-1
 ExtentOrigin=4
 FixedAlignment=1
 TextColor=82FFFFFF
-[Layer34]
+[Layer30]
 Name=VRAM Graph
 Text=<G=GPU1 memory usage percent,0,0,1,0,100,8>
 PositionX=-4
@@ -555,17 +526,17 @@ PositionY=-5
 ExtentX=-12
 ExtentY=-1
 ExtentOrigin=3
-TextColor=8276B900
-[Layer35]
+TextColor=82FFFFFF
+[Layer31]
 Name=GPU Core
 Text=%GPU1 memory usage percent%%
-PositionX=-8
+PositionX=-4
 PositionY=-5
 ExtentX=-4
 ExtentY=-1
-ExtentOrigin=4
-TextColor=8276B900
-[Layer36]
+ExtentOrigin=5
+TextColor=82FFFFFF
+[Layer32]
 Name=VRAM Label
 Text=VRAM
 PositionX=0
@@ -574,16 +545,50 @@ ExtentX=-3
 ExtentY=-1
 ExtentOrigin=3
 Size=75
-TextColor=8276B900
+TextColor=82FFFFFF
 MarginTop=2
-[Layer37]
-Name=GPU Video Label
-Text=NVENC
+[Layer33]
+Name=Power Label
+Text=PWR
 PositionX=0
 PositionY=-6
 ExtentX=-3
 ExtentY=-1
 ExtentOrigin=3
-Size=60
-TextColor=8276B900
-MarginTop=2
+TextColor=82FFFFFF
+[Layer34]
+Name=GPU Temp
+Text=%GPU1 memory temperature%°C
+PositionX=-11
+PositionY=-5
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=5
+TextColor=82FFFFFF
+[Layer35]
+Name=GPU Temp
+Text=%GPU1 temperature%°C
+PositionX=-11
+PositionY=-4
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=5
+TextColor=82FFFFFF
+[Layer36]
+Name=GPU Temp
+Text=%GPU1 temperature 2%°C
+PositionX=-11
+PositionY=-6
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=5
+TextColor=82FFFFFF
+[Layer37]
+Name=CPU Usage
+Text=%CPU usage%%
+PositionX=-6
+PositionY=-2
+ExtentX=-4
+ExtentY=-1
+ExtentOrigin=4
+TextColor=82FFFFFF

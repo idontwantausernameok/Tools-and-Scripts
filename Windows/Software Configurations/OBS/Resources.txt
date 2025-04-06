@@ -1,5 +1,17 @@
-OBS Launch Parameters:
-obs64.exe --minimize-to-tray -scene "Screen Capture" --startreplaybuffer
+Make sure you have a scene called ReplayBuffer or switch to "Default" Scene collection after the last step!
 
-Save Sound:
+The XML file is a Scheduled Task for Windows
+It has the following characteristics:
+
+	OBS Launch Parameters:
+	obs64.exe --minimize-to-tray --scene "ReplayBuffer" --startreplaybuffer
+
+	Start Location:
+	OBS Folder
+
+Save Sound Gist:
 https://gist.github.com/snakecase/e816384a071cec31efbb4b9e429c108d
+
+Move the savesound folder to C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts
+
+Move 'obs-studio' to '~\AppData\Roaming\'
