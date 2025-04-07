@@ -4,7 +4,8 @@
 // @version      2025-04-05
 // @description  Compare all USD Gift Card deals and score them
 // @author       SAS41
-// @match        https://www.allkeyshop.com/blog/en-us/buy-steam-gift-card-cd-key-compare-prices/
+// @match        https://www.allkeyshop.com/blog/*/buy-steam-gift-card-cd-key-compare-prices/
+// @match        https://www.allkeyshop.com/blog/buy-steam-gift-card-cd-key-compare-prices/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=allkeyshop.com
 // @grant        none
 // ==/UserScript==
@@ -47,6 +48,9 @@ async function calculateOptimalOffer() {
   const table = document.querySelector("#offers_table");
   const rows = table.querySelectorAll(`.offers-table-row`);
   let rowValues = new Array();
+  let api = await fetch("https://currency-rate-exchange-api.onrender.com/eur");
+  let currency = await api.json();
+  let ratio = currency.rates.eur.usd;
   for (const row of rows) {
       var valueContainer = row.querySelector('.buy-btn');
       valueContainer.style.fontSize = '1.1rem';
@@ -73,10 +77,25 @@ async function calculateOptimalOffer() {
           valuebox.innerHTML += `<br>${(price-value).toFixed(2)} (${(((price/value)-1)*100).toFixed(0)}%)`;
           rowValues.push({'key': row, 'value': (((price/value)-1)*100)});
       }
+      if (valuebox.textContent.includes('€'))
+      {
+          let oldPrice = price;
+          price = price * ratio;
+          if (price-value <= 0)
+          {
+              valueContainer.style.background = "#007D00";
+          }
+          else
+          {
+              valueContainer.style.background = "#7D0000";
+          }
+          valuebox.innerHTML = `${(oldPrice).toFixed(2)}€=($${(price).toFixed(2)})<br>${(price-value).toFixed(2)} (${(((price/value)-1)*100).toFixed(0)}%)`;
+          rowValues.push({'key': row, 'value': (((price/value)-1)*100)});
+      }
       else
       {
           valueContainer.style.background = "#7D0000";
-          valuebox.innerHTML += "<br>NOT USD!";
+          valuebox.innerHTML += "<br>UNKNOWN CURRENCY!";
       }
   }
 
@@ -91,6 +110,9 @@ async function calculateOptimalOffer() {
     await clickElementByClassAndText('selectr-placeholder', ['Editions']);
     await waitFor(100);
     await clickElementByClassAndText('selectr-option', ['USA', 'USD']);
+    await waitFor(100);
+    await clickElementByClassAndText('selectr-option', ['TRY', 'USD']);
+    await waitFor(100);
     await clickElementByClassAndText('selectr-placeholder', ['Editions']);
     await waitFor(100);
     await clickElementById('paypal-fees');
