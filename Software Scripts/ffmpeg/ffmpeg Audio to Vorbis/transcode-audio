@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "File: $1"
+
+extension="${1##*.}"
+echo "Extension: $extension"
+
+filename=`basename "$1" $extension`
+echo "File Name: $filename"
+
+echo "Transcoding all audio channels to Vorbis..."
+ffmpeg -i "$1" -map 0 -c copy -c:a libvorbis "VORBIS_$filename$extension"
