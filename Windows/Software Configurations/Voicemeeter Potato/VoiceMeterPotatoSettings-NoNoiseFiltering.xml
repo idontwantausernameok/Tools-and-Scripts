@@ -5,12 +5,12 @@
 	<ExternalFXsend send1ch1='0' send1ch2='0' send2ch1='0' send2ch2='0' />
 	<ExternalFXreturn ret1ch1='0' ret1ch2='0' ret2ch1='0' ret2ch2='0' />
 	<InputDev index='1' type='4' name="Desktop Microphone (RØDE NT-USB Mini)" />
-	<InputDev index='2' type='4' name="Microphone (3- Arctis Nova 7)" />
+	<InputDev index='2' type='4' name="Microphone (4- Arctis Nova 7)" />
 	<InputDev index='3' type='4' name="Digital Audio Interface (Valve VR Radio & HMD Mic)" />
 	<InputDev index='4' name="-" />
 	<InputDev index='5' name="-" />
-	<OutputDev index='1' type='8' name="Headphones [A]" />
-	<OutputDev index='2' type='4' name="Index HMD (NVIDIA High Definition Audio)" />
+	<OutputDev index='1' type='8' name="Headphones" />
+	<OutputDev index='2' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='3' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='4' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='5' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
